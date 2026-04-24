@@ -1,6 +1,6 @@
 const path = require('path');
 const fs = require('fs');
-const sqlite3 = require('better-sqlite3').verbose();
+const sqlite3 = require('better-sqlite3');
 const { promisify } = require('util');
 
 const DB_PATH = path.join('/tmp', 'kasa.sqlite3');
