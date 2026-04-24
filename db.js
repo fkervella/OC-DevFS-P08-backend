@@ -3,7 +3,7 @@ const fs = require('fs');
 const sqlite3 = require('sqlite3').verbose();
 const { promisify } = require('util');
 
-const DB_PATH = path.join(__dirname, 'data', 'kasa.sqlite3');
+const DB_PATH = path.join('/tmp', 'kasa.sqlite3');
 const PROPS_JSON_PATH = path.join(__dirname, 'data', 'properties.json');
 
 function openDb() {
